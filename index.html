@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BMI Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700,900" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <h1 style="padding: 20px 0; " id="text"> BMI Calculator </h1>
+
+    <div style="padding: 40px 0;">
+        <div class="infor">
+            <div>
+                <label>Height:</label>
+                <input class="tbox" type="text" id="height" maxlength="4">
+                <label>Centimetre</label>
+            </div>
+            <div>
+                <label>Weight:</label>
+                <input class="tbox" type="text" id="weight" maxlength="4">
+                <label>Kilograms</label>
+            </div>
+        </div>
+
+        <div>
+            <div id="calc_btn" class="button"> Calculate </div>
+            <div id="reset_btn" class="button"> Reset </div>
+        </div>
+
+        <div class="bmi-if">
+            <div>
+                <h3 class="">BMI = <span id="bmi_value"></span></h3>
+            </div>
+
+            <div>
+                <p>You are in the <span id="weight-range"></span> range.</p>
+            </div>
+
+            <p>BMI weight ranges</p>
+            <ul>
+                <li>Less than 18.5 = Underweight</li>
+                <li>Between 18.5 - 24.9 = Healthy Weight</li>
+                <li>Between 25 - 29.9 = Overweight</li>
+                <li>Over 30 = Obese</li>
+            </ul>
+        </div>
+
+        <div class="error">
+            <h3>Please double check your height and weight!!!</h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
